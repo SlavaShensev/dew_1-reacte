@@ -1,0 +1,11 @@
+.header {
+    background: #231f20;
+    grid-area: h;
+}
+
+.logo {
+    min-height: 20px;
+    margin-top: 16px;
+}
+
+

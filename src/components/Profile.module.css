@@ -1,0 +1,19 @@
+.content {
+    grid-area: c;
+}
+
+.mainBg {
+    display: block;
+    width: 100%;
+    max-height: 250px;
+}
+
+.avatar {
+    margin-top: 20px;
+}
+
+.img {
+    display: block;
+    max-height: 60px;
+    border-radius: 50%;
+}
