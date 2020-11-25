@@ -17,3 +17,20 @@
     max-height: 60px;
     border-radius: 50%;
 }
+
+.main {
+   display: flex;
+}
+
+
+.title {
+    font-size: 32px;
+    margin-top: 13px;
+    margin-left: 10px;
+}
+
+.info {
+    font-size: 23px;
+    margin-top: 13px;
+    margin-left: 85px;
+}
