@@ -3,8 +3,6 @@ import s from './Post.module.css';
 
 const Post = () => {
 
-    console.log(Post);
-
     return (
         <div className={s.item}>
             <img
@@ -13,6 +11,7 @@ const Post = () => {
                 <span>
                     post 1
                 </span>
+
             </div>
             <div>
                 <span>
