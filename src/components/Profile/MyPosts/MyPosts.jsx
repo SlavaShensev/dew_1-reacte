@@ -13,10 +13,10 @@ const MyPosts = () => {
                     post 1
                 </div>
                 <div className={'item'}>
-                    post 2
+                    <Post likeCount =' 12'/>
+                    <Post likeCount =' 0'/>
                 </div>
             </div>
-            <Post/>
         </div>
 
     )
