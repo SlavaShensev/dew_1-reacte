@@ -13,9 +13,9 @@ const socialNetwork = () => {
             <Header/>
             <Navbar/>
             <div className={'appWrapper-content'}>
-                <Profile/>
                 <Dialogs/>
             </div>
+            {/*<Profile/>*/}
         </div>
     )
 };
