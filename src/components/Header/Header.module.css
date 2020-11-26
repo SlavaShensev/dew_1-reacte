@@ -1,11 +1,13 @@
 .header {
-    background: #231f20;
+    background: #0b0b0b;
     grid-area: h;
+    z-index: 1;
 }
 
 .logo {
     min-height: 20px;
     margin-top: 16px;
+    z-index: 3;
 }
 
 
