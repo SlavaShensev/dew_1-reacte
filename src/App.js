@@ -5,13 +5,17 @@ import MyPosts from "./components/Profile/MyPosts/MyPosts";
 import './index.css';
 import './App.css';
 import Profile from "./components/Profile/Profile";
+import Dialogs from "./components/Dialogs/Dialogs";
 
 const socialNetwork = () => {
     return (
         <div className={'appWrapper'}>
             <Header/>
             <Navbar/>
-            <Profile/>
+            <div className={'appWrapper-content'}>
+                <Profile/>
+                <Dialogs/>
+            </div>
         </div>
     )
 };
