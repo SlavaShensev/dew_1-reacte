@@ -5,6 +5,10 @@ import Post from "./Post/Post";
 
 
 const MyPosts = () => {
+
+
+
+
     return (
         <div>
             <div>
@@ -15,8 +19,8 @@ const MyPosts = () => {
                     post 1
                 </div>
                 <div className={'item'}>
-                    <Post likeCount =' 12'/>
-                    <Post likeCount =' 0'/>
+                    <Post likeCount ='12'/>
+                    <Post likeCount ='1'/>
                 </div>
             </div>
         </div>
