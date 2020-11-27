@@ -17,9 +17,9 @@
 }
 
 .item a.active {
-    color: gold;
+    color: #82b440;
 }
 
 .item > a:hover{
-    color: gold;
+    color: #82b440;
 }
