@@ -20,7 +20,7 @@ const Message = (props) => {
 };
 
 const Dialogs = (props) => {
-    let dialogsData = [
+    let dialogs = [
         {id: 1, name: 'UserGreen'},
         {id: 2, name: 'UserYellow'},
         {id: 3, name: 'UserBlack'},
@@ -30,9 +30,7 @@ const Dialogs = (props) => {
         {id: 7, name: 'UserGrey'},
     ];
 
-
-
-    let messagesData = [
+    let messages = [
         {id: 1, message: 'Greet'},
         {id: 2, message: 'Lorem ipsum dolor.'},
         {id: 3, message: 'Lorem ipsum dolor sit amet, consectetur.'},
@@ -42,26 +40,22 @@ const Dialogs = (props) => {
         {id: 7, message: 'Lorem ipsum dolor sit amet, consectetur.'},
     ];
 
+    let dialogsElements = dialogs.map((d) => {
+        return <DialogItem name={d.name} id={d.id}/>
+    });
+
+    let messagesElements = messages.map((m) => {
+        return <Message message={m.message}/>
+    });
+    console.log(dialogsElements)
+    console.log(messagesElements)
     return (
         <div className={s.dialogs}>
             <div className={s.dialogsItems}>
-                <DialogItem name={dialogsData[0].name} id={dialogsData[0].id}/>
-                <DialogItem name={dialogsData[1].name} id={dialogsData[1].id}/>
-                <DialogItem name={dialogsData[2].name} id={dialogsData[2].id}/>
-                <DialogItem name={dialogsData[3].name} id={dialogsData[3].id}/>
-                <DialogItem name={dialogsData[4].name} id={dialogsData[4].id}/>
-                <DialogItem name={dialogsData[5].name} id={dialogsData[5].id}/>
-                <DialogItem name={dialogsData[6].name} id={dialogsData[6].id}/>
-
+                {dialogsElements}
             </div>
             <div className={s.messages}>
-                <Message message={messagesData[0].message}/>
-                <Message message={messagesData[1].message}/>
-                <Message message={messagesData[2].message}/>
-                <Message message={messagesData[3].message}/>
-                <Message message={messagesData[4].message}/>
-                <Message message={messagesData[5].message}/>
-                <Message message={messagesData[6].message}/>
+                {messagesElements}
             </div>
         </div>
     );
