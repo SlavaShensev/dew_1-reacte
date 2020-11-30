@@ -2,22 +2,22 @@ import React from 'react';
 import n from './NavBar.module.css';
 
 const NavBar = () => {
-    return(
+    return (
         <div className={n.nav}>
             <div className={n.profile}>
-                Profile
+                <a href={'/profile'}>Profile</a>
             </div>
             <div className={n.message}>
-                Message
+                <a href={'/dialogs'}>Message</a>
             </div>
             <div className={n.news}>
-                News
+                <a href={'/news'}>News</a>
             </div>
             <div className={n.music}>
-                Music
+                <a href={'/music'}>Music</a>
             </div>
             <div className={n.setting}>
-                Setting
+                <a href={'/settings'}>Setting</a>
             </div>
         </div>
     )

@@ -9,7 +9,7 @@ import PostText from "./PostText/PostText";
 import PostInput from "./PostInput/PostInput";
 
 
-const Post = (props) => {
+const Post = () => {
     return (
         <div className={p.post}>
             <PostHeader/>
@@ -18,7 +18,6 @@ const Post = (props) => {
             <PostTitle />
             <PostAuthor/>
             <PostText/>
-                {props.message}
             <PostInput/>
         </div>
     )
