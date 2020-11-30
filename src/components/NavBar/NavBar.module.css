@@ -1,4 +1,26 @@
 .nav {
     grid-area: n;
     background-color: #414b52;
+    padding: 10px;
+
+}
+
+.profile {
+    margin-bottom: 10px;
+}
+
+.message {
+    margin-bottom: 10px;
+}
+
+.news {
+    margin-bottom: 10px;
+}
+
+.music {
+    margin-bottom: 10px;
+}
+
+.setting {
+    margin-top: 30px;
 }

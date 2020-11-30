@@ -4,19 +4,19 @@ import n from './NavBar.module.css';
 const NavBar = () => {
     return(
         <div className={n.nav}>
-            <div>
+            <div className={n.profile}>
                 Profile
             </div>
-            <div>
+            <div className={n.message}>
                 Message
             </div>
-            <div>
+            <div className={n.news}>
                 News
             </div>
-            <div>
+            <div className={n.music}>
                 Music
             </div>
-            <div>
+            <div className={n.setting}>
                 Setting
             </div>
         </div>
