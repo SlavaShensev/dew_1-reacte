@@ -1,11 +1,14 @@
 import React from 'react';
 import h from './Header.module.css';
+import logo from '../Static/Header/logo.png';
 
 const Header = () => {
     return (
             <header className={h.header}>
-                <img className={h.logo}
-                     src={'https://www.flaticon.com/svg/static/icons/svg/732/732245.svg'} alt=""/>
+                <a href={'#'} className={h.link}>
+                    <img className={h.logo}
+                         src={logo} alt=""/>
+                </a>
             </header>
     )
 };
