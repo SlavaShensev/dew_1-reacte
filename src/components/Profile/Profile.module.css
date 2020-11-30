@@ -2,8 +2,46 @@
     grid-area: c;
     background: #414b52;
 }
+
+.post {
+
+}
+
+.post__title {
+
+}
+
+.post__img {
+
+}
+
 .img {
     width: 100%;
-    max-height: 200px;
+    height: 100%;
     object-fit: cover;
+}
+
+.post__img {
+
+}
+
+.post__ava {
+
+}
+
+.ava {
+    width: 50px;
+    height: 50px;
+}
+
+.title__text {
+
+}
+
+.author {
+
+}
+
+.post__text {
+
 }
