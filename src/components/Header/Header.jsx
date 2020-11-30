@@ -5,7 +5,7 @@ import logo from '../Static/Header/logo.png';
 const Header = () => {
     return (
             <header className={h.header}>
-                <a href={'#'} className={h.link}>
+                <a href={'#'} className={h.link} target={'_blank'}>
                     <img className={h.logo}
                          src={logo} alt=""/>
                 </a>
