@@ -1,5 +1,5 @@
 import React from 'react';
-import p from "../Profile.module.css";
+import p from "./Post.module.css";
 import PostHeader from "./PostHeader/PostHeader";
 import PostImg from "./PostImg/PostImg";
 import PostAva from "./PostAva/PostAva";
@@ -9,15 +9,16 @@ import PostText from "./PostText/PostText";
 import PostInput from "./PostInput/PostInput";
 
 
-const Post = () => {
+const Post = (props) => {
     return (
         <div className={p.post}>
             <PostHeader/>
             <PostImg/>
             <PostAva/>
-            <PostTitle/>
+            <PostTitle />
             <PostAuthor/>
             <PostText/>
+                {props.message}
             <PostInput/>
         </div>
     )

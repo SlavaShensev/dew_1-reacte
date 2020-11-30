@@ -5,7 +5,7 @@ import Post from "./Post/Post";
 const Profile = () => {
     return (
         <div className={p.content}>
-           <Post/>
+           <Post message={'Hello!'}/>
         </div>
     )
 };

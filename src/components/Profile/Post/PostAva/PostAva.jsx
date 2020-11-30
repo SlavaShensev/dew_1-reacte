@@ -1,5 +1,5 @@
 import React from 'react';
-import p from "../../Profile.module.css";
+import p from "./PostAva.module.css";
 import ava from "../../../Static/Profile/post-ava.jpg";
 
 

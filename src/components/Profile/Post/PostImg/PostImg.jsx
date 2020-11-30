@@ -1,5 +1,5 @@
 import React from 'react';
-import p from "../../Profile.module.css";
+import p from "./PostImg.module.css";
 import bg from "../../../Static/Profile/bg1.jpg";
 
 

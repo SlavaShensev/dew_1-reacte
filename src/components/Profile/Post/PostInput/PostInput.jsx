@@ -1,11 +1,11 @@
 import React from 'react';
-import p from "../../Profile.module.css";
+import p from "./PostInput.module.css";
 
 
 const PostInput = () => {
     return (
         <div className={p.post__input}>
-            <input className={p.input} type={'text'}/>
+            <input/>
         </div>
     )
 };
