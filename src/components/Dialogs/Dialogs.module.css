@@ -5,19 +5,32 @@
     padding: 20px;
 }
 
-.item {
+.users {
 
 }
 
-.message {
+.users .active {
+    color: #bababa
+}
 
+.user__item {
+    margin-bottom: 10px;
+
+}
+
+.users__link {
+    color: white;
+    text-decoration: none;
 }
 
 .dialog {
-    color: white;
-    margin-bottom: 10px;
+
 }
 
-.item .active {
-    color: #bababa
+.messages {
+
+}
+
+.message__item{
+
 }
