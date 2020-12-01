@@ -17,6 +17,10 @@
     color: white;
 }
 
+.item a:hover{
+    color: #bababa;
+}
+
 .item a.active {
     color: #bababa;
 }
