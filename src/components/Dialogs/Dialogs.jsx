@@ -40,19 +40,20 @@ let messagesData = [
     {id: 5, message: 'Bay!'},
 ];
 
-const Dialogs = () => {
+let users = dialogsData
+    .map(dialog => <UserItem name={dialog.name} id={dialog.id}/>);
+
+let message = messagesData
+    .map(mes => <Message message={mes.message}/>);
+
+let Dialogs = () => {
     return (
         <div className={s.dialogs}>
             <div className={s.users}>
-               <UserItem name={dialogsData[0].name} id={dialogsData[0].id}/>
-               <UserItem name={dialogsData[1].name} id={dialogsData[1].id}/>
-               <UserItem name={dialogsData[2].name} id={dialogsData[2].id}/>
-               <UserItem name={dialogsData[3].name} id={dialogsData[3].id}/>
-               <UserItem name={dialogsData[4].name} id={dialogsData[4].id}/>
+                {users}
             </div>
             <div className={s.messages}>
-                <Message message={messagesData[0].message}/>
-                <Message message={messagesData[1].message}/>
+                {message}
             </div>
         </div>
     )
