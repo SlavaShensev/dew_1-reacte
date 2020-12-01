@@ -2,25 +2,21 @@
     grid-area: n;
     background-color: #414b52;
     padding: 10px;
-
 }
 
-.profile {
+.item {
     margin-bottom: 10px;
 }
 
-.message {
-    margin-bottom: 10px;
+.item:last-child {
+    margin-top: 25px;
 }
 
-.news {
-    margin-bottom: 10px;
+.item a {
+    text-decoration: none;
+    color: white;
 }
 
-.music {
-    margin-bottom: 10px;
-}
-
-.setting {
-    margin-top: 30px;
+.item a.active {
+    color: #bababa;
 }
