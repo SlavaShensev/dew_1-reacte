@@ -3,13 +3,14 @@
     display: grid;
     grid-template-columns: 2fr 10fr;
     padding: 20px;
+    border: thick double #bababa;
 }
 
 .users {
 
 }
 
-.users .active {
+.users__item .active {
     color: #bababa
 }
 
@@ -31,6 +32,6 @@
 
 }
 
-.message__item{
-
+.message__item {
+    margin-bottom: 10px;
 }

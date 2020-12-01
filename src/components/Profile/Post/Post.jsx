@@ -17,7 +17,10 @@ const Post = () => {
             <PostAva/>
             <PostTitle />
             <PostAuthor/>
-            <PostText/>
+            <PostText text={'You should see ice. It moves like it has a\n' +
+            '                mind. Like it knows it killed the world once\n' +
+            '                and got a taste for murder. After the\n' +
+            '                avalanche, it took us a week to climb out....'}/>
             <PostInput/>
         </div>
     )
