@@ -4,6 +4,7 @@ import ava from '../../../Static/Profile/post-ava.jpg';
 
 
 const PostContent = (props) => {
+   const renderPost= (inputPost) => (<p>{inputPost}</p>)
     return (
         <div>
             <div>
@@ -20,9 +21,7 @@ const PostContent = (props) => {
                 </h4>
             </div>
             <div>
-                <p>
-                    {props.text}
-                </p>
+                    {props.text.map(renderPost)}
             </div>
             <div>
                 <p>

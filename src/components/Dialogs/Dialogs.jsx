@@ -3,17 +3,17 @@ import s from './Dialogs.module.css';
 import UserItem from "./UserItem/UserItem";
 import Message from "./Message/Message";
 
-const users = dialogsData
-    .map(dialog => <UserItem name={dialog.name} id={dialog.id}/>);
-const message = messagesData
-    .map(mes => <Message message={mes.message}/>);
-const Dialogs = () => {
+const Dialogs = (props) => {
+
+    const users = props.dialogs.map(dialog => <UserItem key={`dialog_${dialog.id}`} name={dialog.name} id={dialog.id}/>);
+    const message = props.messages.map(mes => <Message  key={`message_${mes.id}`} message={mes.message}/>);
+
     return (
-        <div className={s.dialogs}>
-            <div className={s.users}>
+        <div>
+            <div>
                 {users}
             </div>
-            <div className={s.messages}>
+            <div>
                 {message}
             </div>
         </div>
