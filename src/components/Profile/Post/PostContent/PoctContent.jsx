@@ -2,6 +2,7 @@ import React from 'react';
 import s from './PostContent.module.css';
 import ava from '../../../Static/Profile/post-ava.jpg';
 
+
 const PostContent = (props) => {
     return (
         <div>
@@ -37,5 +38,4 @@ const PostContent = (props) => {
         </div>
     )
 };
-
 export default PostContent;
