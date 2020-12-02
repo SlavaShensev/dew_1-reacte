@@ -3,8 +3,7 @@ import s from './Dialogs.module.css';
 import UserItem from "./UserItem/UserItem";
 import Message from "./Message/Message";
 
-
-let dialogsData = [
+const dialogsData = [
     {id: 1, name: 'Slava'},
     {id: 2, name: 'Vova'},
     {id: 3, name: 'Gena'},
@@ -12,7 +11,7 @@ let dialogsData = [
     {id: 5, name: 'Nikolay'},
 ];
 
-let messagesData = [
+const messagesData = [
     {id: 1, message: 'Hello'},
     {id: 2, message: 'How are you?'},
     {id: 3, message: 'Bay!'},
@@ -20,13 +19,13 @@ let messagesData = [
     {id: 5, message: 'Bay!'},
 ];
 
-let users = dialogsData
+const users = dialogsData
     .map(dialog => <UserItem name={dialog.name} id={dialog.id}/>);
 
-let message = messagesData
+const message = messagesData
     .map(mes => <Message message={mes.message}/>);
 
-let Dialogs = () => {
+const Dialogs = () => {
     return (
         <div className={s.dialogs}>
             <div className={s.users}>
