@@ -32,8 +32,7 @@ const PostContent = (props) => {
                 </p>
             </div>
             <div>
-                <textarea>
-                </textarea>
+                <textarea/>
             </div>
         </div>
     )

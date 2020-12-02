@@ -10,7 +10,6 @@ const dialogsData = [
     {id: 4, name: 'Olya'},
     {id: 5, name: 'Nikolay'},
 ];
-
 const messagesData = [
     {id: 1, message: 'Hello'},
     {id: 2, message: 'How are you?'},
