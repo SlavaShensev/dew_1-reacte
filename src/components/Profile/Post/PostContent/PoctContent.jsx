@@ -2,13 +2,14 @@ import React from 'react';
 import s from './PostContent.module.css';
 import ava from '../../../Static/Profile/post-ava.jpg';
 
+
 const PostContent = (props) => {
     const renderPost = (inputPost) => (<p>{inputPost}</p>);
-let newPostElement = React.createRef();
-let addPost = () => {
-let text = newPostElement.current.value;
-alert(text);
-};
+    let newPostElement = React.createRef();
+    let addPost = () => {
+        let text = newPostElement.current.value;
+        alert(text);
+    };
     return (
         <div>
             <div>
