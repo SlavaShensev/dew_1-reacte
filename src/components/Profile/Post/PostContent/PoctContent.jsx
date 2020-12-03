@@ -3,11 +3,16 @@ import s from './PostContent.module.css';
 import ava from '../../../Static/Profile/post-ava.jpg';
 
 const PostContent = (props) => {
-   const renderPost= (inputPost) => (<p>{inputPost}</p>);
+    const renderPost = (inputPost) => (<p>{inputPost}</p>);
+let newPostElement = React.createRef();
+let addPost = () => {
+let text = newPostElement.current.value;
+alert(text);
+};
     return (
         <div>
             <div>
-                <img src={ava}/>
+                <img src={ava} alt={'#'}/>
             </div>
             <div>
                 <h2>
@@ -20,7 +25,7 @@ const PostContent = (props) => {
                 </h4>
             </div>
             <div>
-                    {props.text.map(renderPost)}
+                {props.text.map(renderPost)}
             </div>
             <div>
                 <p>
@@ -30,9 +35,13 @@ const PostContent = (props) => {
                     16
                 </p>
             </div>
-            <div>
-                <textarea/>
+            <div className={s.textarea}>
+                <textarea ref={newPostElement}/>
+                <button className={s.button} onClick={addPost}>
+                    click me
+                </button>
             </div>
+
         </div>
     )
 };

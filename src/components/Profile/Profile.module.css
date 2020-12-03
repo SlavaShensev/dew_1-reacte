@@ -1,7 +1,9 @@
 .content {
     grid-area: c;
     background: #414b52;
-    border: thick double #bababa
+    border: thick double #bababa;
 }
+
+
 
 

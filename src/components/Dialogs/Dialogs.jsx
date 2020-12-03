@@ -8,14 +8,24 @@ const Dialogs = (props) => {
                                                         name={dialog.name} id={dialog.id}/>);
     const message = props.messages.map(mes => <Message key={`message_${mes.id}`}
                                                        message={mes.message}/>);
-
+let newAddText = React.createRef();
+let addText = () => {
+    let text = newAddText.current.value;
+    alert(text);
+};
     return (
-        <div>
-            <div>
+        <div className={s.dialogs}>
+            <div >
                 {users}
             </div>
             <div>
                 {message}
+            </div>
+            <div>
+                <textarea ref={newAddText}/>
+                <button onClick={addText}>
+                    dont click me pleas!
+                </button>
             </div>
         </div>
     )

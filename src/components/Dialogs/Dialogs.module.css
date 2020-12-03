@@ -14,7 +14,7 @@
     color: #bababa
 }
 
-.user__item {
+.userItem {
     margin-bottom: 10px;
 
 }
@@ -35,3 +35,4 @@
 .message__item {
     margin-bottom: 10px;
 }
+

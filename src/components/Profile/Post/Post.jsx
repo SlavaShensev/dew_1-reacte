@@ -6,7 +6,7 @@ import PostContent from "./PostContent/PoctContent";
 const Post = (props) => {
     const postsText = props.text.map(({text}) => text);
     return (
-        <div>
+        <div className={p.postMain}>
             <PostInfo/>
             <PostContent text={postsText}/>
         </div>
