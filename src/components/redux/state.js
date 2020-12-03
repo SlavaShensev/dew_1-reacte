@@ -1,4 +1,7 @@
 let state = {
+
+
+
     postTextData: [
         {id: 1, text: 'You should see ice. It moves like it has'},
         {id: 2, text: 'You should see ice. It moves like it has a mind.'},

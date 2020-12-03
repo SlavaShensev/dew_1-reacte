@@ -2,9 +2,8 @@ import React from 'react';
 import s from './PostContent.module.css';
 import ava from '../../../Static/Profile/post-ava.jpg';
 
-
 const PostContent = (props) => {
-   const renderPost= (inputPost) => (<p>{inputPost}</p>)
+   const renderPost= (inputPost) => (<p>{inputPost}</p>);
     return (
         <div>
             <div>
