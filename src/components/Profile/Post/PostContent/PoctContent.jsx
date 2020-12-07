@@ -2,15 +2,22 @@ import React from 'react';
 import s from './PostContent.module.css';
 import ava from '../../../Static/Profile/post-ava.jpg';
 
-
 const PostContent = (props) => {
     const renderPost = (inputPost) => (<h3>{inputPost}</h3>);
+
     let newPostElement = React.createRef();
+
+
     let addPost = () => {
         let text = newPostElement.current.value;
         props.addPost(text);
         newPostElement.current.value = '';
     };
+
+    let onPostChange = () => {
+
+    }
+
     return (
         <div>
             <div>
@@ -38,8 +45,11 @@ const PostContent = (props) => {
                 </p>
             </div>
             <div className={s.textarea}>
-                <textarea ref={newPostElement}/>
-                <button className={s.button} onClick={addPost}>
+                <textarea onChange={onPostChange}
+                          ref={newPostElement}
+                          value={props.newPostText}/>
+                <button className={s.button}
+                        onClick={addPost}>
                     click me
                 </button>
             </div>

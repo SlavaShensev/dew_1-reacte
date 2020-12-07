@@ -7,6 +7,7 @@ let state = {
             {id: 2, text: 'You should see ice. It moves like it has a mind.'},
             {id: 3, text: '  avalanche, it took us a week to climb out'},
         ],
+        newPostText: 'learn react Shensev',
     },
     dialogsPage: {
         dialogsData: [
