@@ -6,14 +6,19 @@ import reportWebVitals from './reportWebVitals';
 import state from "./components/redux/state";
 import {addPost} from "./components/redux/state";
 
-addPost('SlavaShensev');
 
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App state={state} addPost={addPost}/>
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+
+
+
+
+    ReactDOM.render(
+        <React.StrictMode>
+            <App state={state} addPost={addPost}/>
+        </React.StrictMode>,
+        document.getElementById('root')
+    );
+
+
 
 reportWebVitals();

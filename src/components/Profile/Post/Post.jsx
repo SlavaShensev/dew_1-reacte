@@ -4,12 +4,11 @@ import PostInfo from "./PostInfo/PostInfo";
 import PostContent from "./PostContent/PoctContent";
 
 const Post = (props) => {
-    const postsText = props.text.map(({text}) => text);
+    const postsText = props.text.map(el => el.text);
     return (
         <div className={p.postMain}>
             <PostInfo/>
-            <PostContent text={postsText}/>
-
+            <PostContent text={postsText} addPost={props.addPost}/>
         </div>
     )
 };

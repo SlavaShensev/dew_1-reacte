@@ -11,6 +11,7 @@ import './App.css';
 
 
 const App = (props) => {
+
     return (
         <BrowserRouter>
             <div className={'appWrapper'}>
@@ -18,7 +19,9 @@ const App = (props) => {
                 <NavBar/>
                 <div className={'appWrapper-content'}>
                     <Route path={'/profile'}
-                           render={() => <Profile text={props.state.profilePage.postTextData}/>}/>
+                           render={() => <Profile
+                               text={props.state.profilePage.postTextData}
+                               addPost={props.addPost}/>}/>
                     <Route path={'/dialogs'}
                            render={() => <Dialogs dialogs={props.state.dialogsPage.dialogsData}
                                                   messages={props.state.dialogsPage.messagesData}/>}/>
@@ -30,4 +33,5 @@ const App = (props) => {
         </BrowserRouter>
     )
 };
+
 export default App;

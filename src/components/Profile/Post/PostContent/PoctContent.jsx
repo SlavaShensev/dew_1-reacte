@@ -4,11 +4,11 @@ import ava from '../../../Static/Profile/post-ava.jpg';
 
 
 const PostContent = (props) => {
-    const renderPost = (inputPost) => (<p>{inputPost}</p>);
+    const renderPost = (inputPost) => (<h3>{inputPost}</h3>);
     let newPostElement = React.createRef();
     let addPost = () => {
         let text = newPostElement.current.value;
-        alert(text);
+        props.addPost(text);
     };
     return (
         <div>
