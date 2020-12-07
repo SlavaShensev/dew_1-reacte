@@ -1,24 +1,8 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
+import {rerender} from "./render";
 import state from "./components/redux/state";
-import {addPost} from "./components/redux/state";
 
 
-
-
-
-
-
-    ReactDOM.render(
-        <React.StrictMode>
-            <App state={state} addPost={addPost}/>
-        </React.StrictMode>,
-        document.getElementById('root')
-    );
-
-
+rerender(state);
 
 reportWebVitals();

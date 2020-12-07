@@ -1,3 +1,5 @@
+import {rerender} from "../../render";
+
 let state = {
     profilePage: {
         postTextData: [
@@ -31,6 +33,9 @@ export let addPost = (postMessage) => {
         likesCount: 0,
     };
     state.profilePage.postTextData.push(newPost);
+
+    rerender(state);
+
 };
 
 export default state;
