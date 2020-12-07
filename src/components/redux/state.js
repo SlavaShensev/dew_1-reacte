@@ -26,17 +26,22 @@ let state = {
         ]
     }
 };
+window.state = state;
 
-export let addPost = (postMessage) => {
+export let addPost = () => {
     let newPost = {
         id: 4,
-        text: postMessage,
+        text: state.profilePage.newPostText,
         likesCount: 0,
     };
     state.profilePage.postTextData.push(newPost);
-
+    state.profilePage.newPostText = '';
     rerender(state);
+};
 
+export let updateNewPostText = (newText) => {
+    state.profilePage.newPostText = newText;
+    rerender(state);
 };
 
 export default state;

@@ -1,23 +1,16 @@
 import React from 'react';
 import s from './PostContent.module.css';
 import ava from '../../../Static/Profile/post-ava.jpg';
-
 const PostContent = (props) => {
     const renderPost = (inputPost) => (<h3>{inputPost}</h3>);
-
     let newPostElement = React.createRef();
-
-
     let addPost = () => {
-        let text = newPostElement.current.value;
-        props.addPost(text);
-        newPostElement.current.value = '';
+        props.addPost();
     };
-
     let onPostChange = () => {
-
+        let text = newPostElement.current.value;
+        props.updateNewPostText(text);
     }
-
     return (
         <div>
             <div>

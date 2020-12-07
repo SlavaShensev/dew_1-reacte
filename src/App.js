@@ -9,7 +9,6 @@ import Music from "./components/Music/Music";
 import Settings from "./components/Settings/Settings1";
 import './App.css';
 
-
 const App = (props) => {
 
     return (
@@ -20,9 +19,11 @@ const App = (props) => {
                 <div className={'appWrapper-content'}>
                     <Route path={'/profile'}
                            render={() => <Profile
-                               profilePage={props.state.profilePage.postTextData}
+                               postTextData={props.state.profilePage.postTextData}
+                               newPostText={props.state.profilePage.newPostText}
                                addPost={props.addPost}
-                                />}/>
+                               updateNewPostText={props.updateNewPostText}
+                           />}/>
                     <Route path={'/dialogs'}
                            render={() => <Dialogs dialogs={props.state.dialogsPage.dialogsData}
                                                   messages={props.state.dialogsPage.messagesData}/>}/>

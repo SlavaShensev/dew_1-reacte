@@ -4,11 +4,14 @@ import PostInfo from "./PostInfo/PostInfo";
 import PostContent from "./PostContent/PoctContent";
 
 const Post = (props) => {
-    const postsText = props.profilePage.map(el => el.text);
+    const postsText = props.postTextData.map(el => el.text);
     return (
         <div className={p.postMain}>
             <PostInfo/>
-            <PostContent text={postsText} addPost={props.addPost}/>
+            <PostContent text={postsText}
+                         addPost={props.addPost}
+                         newPostText={props.newPostText}
+                         updateNewPostText={props.updateNewPostText}/>
         </div>
     )
 };
