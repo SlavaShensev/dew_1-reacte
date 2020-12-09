@@ -10,7 +10,7 @@ const PostContent = (props) => {
     let onPostChange = () => {
         let text = newPostElement.current.value;
         props.updateNewPostText(text);
-    }
+    };
     return (
         <div>
             <div>
@@ -46,7 +46,6 @@ const PostContent = (props) => {
                     click me
                 </button>
             </div>
-
         </div>
     )
 };
