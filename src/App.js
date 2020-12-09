@@ -8,9 +8,7 @@ import News from "./components/News/News";
 import Music from "./components/Music/Music";
 import Settings from "./components/Settings/Settings1";
 import './App.css';
-
 const App = (props) => {
-
     return (
         <BrowserRouter>
             <div className={'appWrapper'}>
@@ -35,5 +33,4 @@ const App = (props) => {
         </BrowserRouter>
     )
 };
-
 export default App;

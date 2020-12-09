@@ -2,7 +2,6 @@ import React from 'react';
 import s from './Dialogs.module.css';
 import UserItem from "./UserItem/UserItem";
 import Message from "./Message/Message";
-
 const Dialogs = (props) => {
     const users = props.dialogs.map(dialog => <UserItem key={`dialog_${dialog.id}`}
                                                         name={dialog.name} id={dialog.id}/>);
