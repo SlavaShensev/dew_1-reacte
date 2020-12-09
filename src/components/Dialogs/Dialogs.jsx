@@ -22,8 +22,8 @@ let addText = () => {
             </div>
             <div>
                 <textarea ref={newAddText}/>
-                <button onClick={addText}>
-                    dont click me pleas!
+                <button onClick={addText} className={s.button}>
+                    Push
                 </button>
             </div>
         </div>
