@@ -2,26 +2,28 @@ import React from 'react';
 import s from './Dialogs.module.css';
 import UserItem from "./UserItem/UserItem";
 import Message from "./Message/Message";
+
 const Dialogs = (props) => {
     const users = props.dialogs.map(dialog => <UserItem key={`dialog_${dialog.id}`}
                                                         name={dialog.name} id={dialog.id}/>);
     const message = props.messages.map(mes => <Message key={`message_${mes.id}`}
                                                        message={mes.message}/>);
-let newAddText = React.createRef();
-let addText = () => {
-    let text = newAddText.current.value;
-    alert(text);
-};
+    let newAddText = React.createRef();
+    let addText = () => {
+        let text = newAddText.current.value;
+        console.log(text)
+    };
     return (
         <div className={s.dialogs}>
-            <div >
+            <div>
                 {users}
             </div>
             <div>
                 {message}
             </div>
             <div>
-                <textarea ref={newAddText}/>
+                <textarea ref={newAddText}
+                          value={props.newPostText}/>
                 <button onClick={addText} className={s.button}>
                     Push
                 </button>

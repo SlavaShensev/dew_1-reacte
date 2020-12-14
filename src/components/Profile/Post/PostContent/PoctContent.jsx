@@ -1,16 +1,17 @@
 import React from 'react';
 import s from './PostContent.module.css';
 import ava from '../../../Static/Profile/post-ava.jpg';
+import {addPostActionCreator, updateNewPostTextActionCreator} from "../../../redux/state";
 
 const PostContent = (props) => {
     const renderPost = (inputPost) => (<h3>{inputPost}</h3>);
     let newPostElement = React.createRef();
     let addPost = () => {
-        props.dispatch({type: 'ADD-POST'});
+        props.dispatch(addPostActionCreator());
     };
     let onPostChange = () => {
         let text = newPostElement.current.value;
-        let action = {type: 'UPDATE-NEW-POST-TEXT', newText: text};
+        let action = updateNewPostTextActionCreator(text);
         props.dispatch(action);
     };
     return (
@@ -40,9 +41,9 @@ const PostContent = (props) => {
                 </p>
             </div>
             <div className={s.textarea}>
-                <textarea onChange={onPostChange}
+                <textarea className={s.textarea} onChange={onPostChange}
                           ref={newPostElement}
-                          value={props.newPostText}/>
+                          value={props.newPostMessages}/>
                 <button className={s.button}
                         onClick={addPost}>
                     click me
@@ -51,4 +52,5 @@ const PostContent = (props) => {
         </div>
     )
 };
+
 export default PostContent;
